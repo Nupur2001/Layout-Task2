@@ -19,12 +19,23 @@ html {
     padding: 24px;
     position: relative;
 } */
-.container {
-  position: relative; 
+/* .container {
+  position: relative;
   padding: 1rem;
   z-index: 1000;
   overflow: visible;
+} */
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+  background-color: rgb(3, 12, 29);
 }
+
 .slide {
   background-color: rgb(3, 12, 29);
   padding: 1rem;
@@ -117,8 +128,8 @@ ul li a i {
 
 .toggle {
   position: absolute;
-  top: 50%; 
-  left: 25px; 
+  top: 50%;
+  left: 25px;
   transform: translateY(-50%);
   height: 31px;
   width: 30px;
@@ -175,8 +186,8 @@ input:checked~.toggle .middle_line {
   transform: translateX(20px);
 }
 
-input:checked ~ .slide {
-  z-index: 1200; 
+input:checked~.slide {
+  z-index: 1200;
   transform: translateX(0);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
@@ -204,9 +215,10 @@ input:checked ~ .slide {
   gap: 1rem;
 }
 
-.nav h3{
+.nav h3 {
   margin-left: 2rem;
 }
+
 .search {
   display: flex;
   align-items: center;
@@ -238,4 +250,42 @@ input:checked ~ .slide {
 .nav-icons ul li {
   flex: 1;
   text-align: center;
+}
+
+.info-cards {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 23%;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #23236d;
+  box-sizing: border-box;
+}
+
+.info-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 0.5rem;
+}
+
+.info-card i {
+  margin-top: -2rem;
+  background-color: midnightblue;
+  padding: 0.8rem;
+  border-radius: 50%;
+}
+
+.rating-increased{
+color: aquamarine;
+font-size: .7rem;
 }
