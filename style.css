@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Plus Jakarta Sans", serif;
+  background-color: rgb(3, 12, 29);
+}
+
+.slide {
+  padding: 1rem;
+  height: 100%;
+  width: 18em;
+  /* width: 245px; */
+  position: absolute;
+  background-color: #fff;
+  transition: 0.5s ease;
+  transform: translateX(-18em);
+}
+h1 {
+  color: midnightblue;
+  font-weight: 800;
+  text-align: center;
+  /* padding: .9rem; */
+  /* padding-right: 1.5rem; */
+}
+.account-title {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  font-size: 1.3rem;
+  color: black;
+  /* font-weight: 500; */
+  /* padding: 0.313rem; */
+  padding: 0.99rem;
+  display: block;
+  text-decoration: none;
+}
+ul li a i {
+  width: 2.5rem;
+  text-align: center;
+}
+
+.slide .card {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: relative;
+  /* z-index: 2; */
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  background: url("./Assets/Images/sidenav-card-background.webp");
+  color: white;
+  margin: 1rem 0;
+}
+.slide .card button {
+  background-color: rgba(115, 147, 179, 0.5);
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  text-transform: uppercase;
+  width: 100%;
+  margin-top: 1rem;
+  color: white;
+}
+.slide .pro {
+  background-color: skyblue;
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.slide .pro:hover,
+.slide .card button:hover {
+  transform: scale(1.05);
+}
+
+input {
+  display: none;
+  visibility: hidden;
+}
+.toggle {
+  position: absolute;
+  top: 15px;
+  left: 4px;
+  height: 31px;
+  width: 30px;
+  background-color: white;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 5px 0;
+}
+
+.toggle .common {
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  background-color: midnightblue;
+  margin: 0 auto;
+}
+
+.toggle .top_line{
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.toggle .middle_line{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.toggle .bottom_line{
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+input:checked ~ .toggle .top_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+input:checked ~ .toggle .bottom_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+input:checked ~ .toggle .middle_line{
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+input:checked ~ .slide{
+    transform: translate(0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
