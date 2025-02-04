@@ -759,6 +759,9 @@ td {
   .card {
     width: 113vw;
   }
+  .orderCard h4 {
+    font-size: 1rem;
+  }
 }
 @media (max-width: 554px) {
   .infoCard {
@@ -797,7 +800,7 @@ td {
   .progressInfoContent {
     display: flex;
     gap: 0;
-}
+  }
   footer {
     margin: 1rem 7rem;
   }
@@ -823,15 +826,33 @@ td {
   }
   .card {
     width: 84vw;
+  }
+  .container {
+    width: 99vw;
+  }
+  .orderCard {
+    flex-wrap: nowrap;
+  }
+  .infoBox3 {
+    padding: 0.9rem;
+  }
+
+  .card6 table {
+    display: block;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  .nameWithIcon{
+    flex-wrap: nowrap;
+  }
 }
-.container {
-  width: 99vw;
+@media (max-width: 390px){
+.infoCard{
+  margin: -1rem;
+  gap: 0rem;
 }
-.orderCard {
-  flex-wrap: nowrap;
-}
-.infoBox3 {
-  padding: .9rem;
+.orderCard h4 {
+  font-size: 1rem;
 }
 }
 
@@ -867,9 +888,6 @@ td {
   .card {
     width: 83vw;
   }
-  .nameWithIcon i {
-    display: none;
-  }
   .progressInfoContent {
     display: flex;
     gap: 0;
@@ -879,15 +897,15 @@ td {
   }
   .orderCard {
     flex-wrap: nowrap;
-}
-.card h2{
-  font-size: 1rem;
-}
-.card6{
-  background: none;
-  /* width: 99vw; */
-  margin-left: 0rem;
-}
+  }
+  .card h2 {
+    font-size: 1rem;
+  }
+  /* .card6 {
+    background: none;
+    width: 99vw;
+    margin-left: 0rem;
+  } */
 }
 @media (max-width: 320px) {
   .container {
