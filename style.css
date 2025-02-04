@@ -60,7 +60,6 @@ html {
 .slide h1 {
   font-weight: 800;
   text-align: center;
-
 }
 .account-title {
   text-transform: uppercase;
@@ -232,7 +231,7 @@ input:checked ~ .slide {
   font-size: 2rem;
 }
 
-.navLeft{
+.navLeft {
   display: flex;
   gap: 0;
 }
@@ -329,6 +328,7 @@ input:checked ~ .slide {
 
 .card {
   width: 45vw;
+  height: auto;
   background: linear-gradient(
     126.97deg,
     rgb(40 53 131 / 74%) 28.26%,
@@ -388,6 +388,7 @@ input:checked ~ .slide {
   height: auto;
 } */
 .card2 .layer2 {
+  margin-top: 1rem;
   margin-left: 2rem;
 }
 .card h3 {
@@ -402,7 +403,7 @@ input:checked ~ .slide {
   width: 10rem;
   height: 10rem;
   border-radius: 9rem;
-  margin-left: 16rem;
+  /* margin-left: 16rem; */
   border: 1.2rem solid rgb(47, 110, 218);
   box-shadow: inset 0 0 7px grey;
   border-bottom-color: white;
@@ -432,6 +433,7 @@ input:checked ~ .slide {
   justify-content: center;
   gap: 12rem;
 }
+
 .infoCards {
   display: flex;
   flex-direction: column;
@@ -451,6 +453,7 @@ input:checked ~ .slide {
 
 .informationCard {
   border-radius: 1rem;
+  width: 100%;
   /* width: 20vw; */
   flex-direction: column;
   display: flex;
@@ -458,13 +461,16 @@ input:checked ~ .slide {
   padding: 2rem;
 }
 
+.card3 .circle-progress-wrap {
+}
 .card4 span,
 .card5 .color {
   color: rgb(36, 223, 36);
   font-size: 0.9rem;
 }
 
-.card4 img, .card5 img {
+.card4 img,
+.card5 img {
   border-radius: 1rem;
   margin-top: 1rem;
   width: 100%;
@@ -531,9 +537,9 @@ input:checked ~ .slide {
   padding: 2rem;
 } */
 
-td,
-th {
-  border: 1px solid #dddddd;
+th,
+td {
+  border-bottom: 0.0625rem solid rgb(45, 55, 72);
   text-align: left;
   padding: 8px;
 }
@@ -581,6 +587,122 @@ footer {
   gap: 1rem;
   font-size: 1.2rem;
   margin-left: 8rem;
+}
+
+/* Media Queries */
+@media (min-width: 2560px) {
+  .card {
+    width: 47.5vw;
+  }
+  .card2 .layer2 .circle-progress-wrap {
+    margin-left: 30rem;
+  }
+}
+@media (max-width: 2560px) {
+
+  td,
+  th {
+    padding: 18px;
+  }
+  td h4,
+  td {
+    font-size: 1.5rem;
+  }
+  .container {
+    padding: 1rem;
+  }
+  .progressInfoContent {
+    justify-content: space-between;
+    gap: 4rem;
+  }
+}
+
+@media(max-width:1600px) and (min-width:1440px){
+  .infoCard {
+    gap: 10rem;
+}
+.card6, .card7 {
+  width: 95.5vw;
+}
+
+.circle-progress-wrap {
+  margin-left: 15rem;
+}
+}
+
+@media (max-width: 1440px) {
+  .infoCard {
+    gap: 10rem;
+}
+  .card {
+  }
+  .card2 .layer2 .circle-progress-wrap {
+    margin-left: 12rem;
+  }
+  .card6, .card7 {
+    width: 95vw;
+  }
+  td,
+  th {
+    padding: 8px;
+  }
+  td h4,
+  td {
+    font-size: 0.9rem;
+  }
+}
+@media(max-width:1024px){
+  .card {
+    width: 43.7vw;
+}
+.card2 .layer2 .circle-progress-wrap {
+  margin-left: 6rem;
+}
+.card6, .card7 {
+  width: 93.7vw;
+}
+}
+@media(max-width:768px){
+  .card{
+    width: 91.5vw;
+  }
+  .card1{
+    width: 95.8vw;
+    padding: 1rem;
+  }
+  .recordLink{
+    top: 0;
+  }
+  .card6, .card7 {
+    width: 91.5vw;
+  }
+  footer {
+    margin: 1rem 15rem;
+}
+.card2 .layer2 .circle-progress-wrap {
+  top: -1rem;
+  margin-left: 13rem;
+}
+.card h3 {
+  font-size: 1rem;
+}
+.card2 p {
+  font-size: 1rem;
+}
+}
+@media (max-width: 480px) {
+  .card {
+    width: 106vw;
+  }
+  .card2 .layer2 .circle-progress-wrap {
+    margin-left: 8.5rem;
+  }
+  .progressInfoContent {
+    display: block;
+  }
+  footer {
+    margin: 1rem 11rem;
+  }
 }
 
 /* @media (max-width: 1629px) {
@@ -720,7 +842,6 @@ footer {
   width: 145vw;
 }
 } */
-
 
 /* @media (min-width: 842px) {
   .card1 {
