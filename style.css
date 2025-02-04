@@ -50,8 +50,10 @@ html {
   max-height: 120vh;
   width: 22em;
   position: absolute;
-  left: 0;
-  top: 0;
+  /* left: 0;
+  top: 0; */
+  left: -1em;
+  top: -1em;
   overflow-y: scroll;
   transition: 0.5s ease;
   transform: translateX(-105%);
@@ -59,7 +61,7 @@ html {
 }
 .slide h1 {
   font-weight: 800;
-  text-align: center;
+  text-align:  -webkit-center;
 }
 .account-title {
   text-transform: uppercase;
@@ -918,166 +920,3 @@ td {
     margin: 1rem 2rem;
   }
 }
-/* @media (max-width: 1629px) {
-  .cardFlex2 .card4,
-  .cardFlex2 .card5 {
-    width: max-content;
-  }
-  .progressInfoContent {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 1rem;
-    justify-content: center;
-    gap: 3rem;
-  }
-
-  .card2 p {
-    margin-top: 1rem;
-    font-size: 2.2rem;
-  }
- 
-  .slide {
-    font-size: 1rem;
-    height: 152vh;
-  }
-
-  .card2 .layer2 .circle-progress-wrap {
-    margin-left: 12rem;
-  }
-  .card3 .circle-progress-wrap {
-    margin-right: 3rem;
-    margin-top: -13rem;
-  }
-
-  .card6 table tr {
-    font-size: 1.3rem;
-  }
-  .cardFlex3 {
-    margin-top: 5rem;
-  }
-} */
-/* @media (min-width: 1400px) {
-  .infoCardsContainer {
-    width: 101%;
-  }
-  .help i {
-    position: fixed;
-    padding: 1rem;
-    background-color: rgb(47, 110, 218);
-    border-radius: 50%;
-    font-size: 1.5rem;
-    right: 5rem;
-    top: 64rem;
-  }
-} */
-
-/* @media (max-width: 1559px) and (min-width:1182){
-  .infoCardsContainer {
-    flex: 2;
-
-  }
-} */
-
-/* @media (max-width: 1350px) {
-  .cardFlex3 .card6,
-  .cardFlex3 .card7 {
-    width: max-content;
-  }
-} */
-/* @media (max-width: 600px) {
-  .nav {
-    flex-direction: column;
-  }
-  .navRight {
-    flex-direction: column;
-    margin-top: 1rem;
-  }
-
-  .toggle {
-    left: 3%;
-  }
-  .card1 {
-    padding: 1rem;
-  }
-  .cardFlex3 .card6,
-  .cardFlex3 .card7 {
-    width: 100%;
-  }
-  .cardFlex1 .card3 {
-    width: 62vh;
-  }
-  .cardFlex2 .card4,
-  .cardFlex2 .card5 {
-    width: 115vw;
-  }
-  .cardFlex1 .card2 {
-    width: 110vw;
-  }
-  .cardFlex2 .card4, .cardFlex2 .card5 {
-    width: 92vw;
-}
-
-  .cardFlex2 .card4,
-  .cardFlex2 .card5 {
-    width: 112vw;
-  }
-  .card3 .circle-progress-wrap {
-    margin-right: -1rem;
-    margin-top: 3rem;
-  }
-  .cardFlex3 .card6,
-  .cardFlex3 .card7 {
-    width: 62vh;
-  }
-  .search {
-    width: 55vw;
-  }
-  .recordLink {
-    padding: 1rem;
-    position: relative;
-    top: 1rem;
-  }
-
-
-} */
-/* 
-@media(max-width:768px){
-  .cardFlex1 .card2, .cardFlex1 .card3, .cardFlex2 .card4, .cardFlex2.card5, .cardFlex3 .card6, .cardFlex3 .card7 {
-    width: 91vw;
-    height: auto;
-  }
-  .cardFlex2 .card4, .cardFlex2 .card5 {
-    width: 91vw;
-}
-.container {
-  padding: 0;
-  width: 145vw;
-}
-} */
-
-/* @media (min-width: 842px) {
-  .card1 {
-    padding: 1rem;
-  }
-} */
-
-/* @media (max-width: 1000px) and (min-width: 394px) {
-  footer {
-    margin: 0 10rem;
-    flex-direction: column;
-  }
-  footer ul li {
-    margin-left: -9rem;
-  }
-  .help i {
-    top: 65rem;
-    right: 5rem;
-  }
- 
-} */
-/* @media (min-width: 2240px) {
-  .nav h3 {
-    margin-left: 7rem;
-  }
-} */
