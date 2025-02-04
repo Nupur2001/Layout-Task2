@@ -599,7 +599,9 @@ footer {
   }
 }
 @media (max-width: 2560px) {
-
+  /* .card {
+    width: 47.5vw;
+  } */
   td,
   th {
     padding: 18px;
@@ -617,94 +619,287 @@ footer {
   }
 }
 
-@media(max-width:1600px) and (min-width:1440px){
+@media (max-width: 1600px) and (min-width: 1440px) {
   .infoCard {
     gap: 10rem;
-}
-.card6, .card7 {
-  width: 95.5vw;
-}
+  }
+  .card6,
+  .card7 {
+    width: 95.5vw;
+  }
 
-.circle-progress-wrap {
-  margin-left: 15rem;
-}
+  .circle-progress-wrap {
+    margin-left: 15rem;
+  }
 }
 
 @media (max-width: 1440px) {
   .infoCard {
     gap: 10rem;
-}
+  }
   .card {
+    width: 44.3vw;
   }
-  .card2 .layer2 .circle-progress-wrap {
-    margin-left: 12rem;
-  }
-  .card6, .card7 {
-    width: 95vw;
-  }
-  td,
-  th {
-    padding: 8px;
-  }
-  td h4,
-  td {
-    font-size: 0.9rem;
-  }
-}
-@media(max-width:1024px){
-  .card {
-    width: 43.7vw;
 }
 .card2 .layer2 .circle-progress-wrap {
-  margin-left: 6rem;
+  margin-left: 12rem;
 }
-.card6, .card7 {
-  width: 93.7vw;
+.card6,
+.card7 {
+  width: 95vw;
 }
+td,
+th {
+  padding: 8px;
 }
-@media(max-width:768px){
-  .card{
+td h4,
+td {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 43.7vw;
+  }
+  .card2 .layer2 .circle-progress-wrap {
+    margin-left: 6rem;
+  }
+  .card6,
+  .card7 {
+    width: 93.7vw;
+  }
+}
+@media (max-width: 1015px) and (min-width: 769px) {
+  .card {
     width: 91.5vw;
   }
-  .card1{
+  .card h3 {
+    font-size: 1rem;
+  }
+  .progressInfoContent {
+    gap: 0rem;
+  }
+  .card2 .layer2 .circle-progress-wrap {
+    margin-left: 14rem;
+  }
+  .progressInfoContainer {
+    top: -4rem;
+  }
+  footer {
+    margin: 1rem 7rem;
+  }
+  .card5 .goodWorks {
+    gap: 0rem;
+  }
+}
+@media (max-width: 1122px) and (min-width: 1025px) {
+  .card {
+    width: 43.7vw;
+  }
+  .card2 .layer2 .circle-progress-wrap {
+    margin-left: 6rem;
+  }
+  .infoCard {
+    gap: 35rem;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    width: 91.5vw;
+  }
+  .card1 {
     width: 95.8vw;
     padding: 1rem;
   }
-  .recordLink{
+  .recordLink {
     top: 0;
   }
-  .card6, .card7 {
+  .card6,
+  .card7 {
     width: 91.5vw;
-  }
-  footer {
-    margin: 1rem 15rem;
-}
-.card2 .layer2 .circle-progress-wrap {
-  top: -1rem;
-  margin-left: 13rem;
-}
-.card h3 {
-  font-size: 1rem;
-}
-.card2 p {
-  font-size: 1rem;
-}
-}
-@media (max-width: 480px) {
-  .card {
-    width: 106vw;
-  }
-  .card2 .layer2 .circle-progress-wrap {
-    margin-left: 8.5rem;
-  }
-  .progressInfoContent {
-    display: block;
   }
   footer {
     margin: 1rem 11rem;
   }
+  .card2 .layer2 .circle-progress-wrap {
+    top: -1rem;
+    margin-left: 13rem;
+  }
+  .card h3 {
+    font-size: 1rem;
+  }
+  .card2 p {
+    font-size: 1rem;
+  }
+  .infoCard {
+    gap: 0;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 0;
+    width: 125vw;
+  }
+  .nav {
+    flex-direction: column;
+  }
+  .nav h3 {
+    margin-left: 0rem;
+    font-size: 2rem;
+  }
+  .navLeft {
+    margin: 1rem;
+  }
+  .toggle {
+    left: 2%;
+  }
+  .infoCard {
+    gap: 35rem;
+  }
+  .card {
+    width: 113vw;
+  }
+}
+@media (max-width: 554px) {
+  .infoCard {
+    gap: 6rem;
+  }
+}
+@media (max-width: 480px) {
+  .nav {
+    flex-direction: column;
+  }
+  .nav h3 {
+    margin-left: 0rem;
+    font-size: 2rem;
+  }
+  .navLeft {
+    margin: 1rem;
+  }
+
+  .navRight {
+  }
+  .container {
+    width: 135vw;
+  }
+  .toggle {
+    left: 2%;
+  }
+  .card {
+    width: 120vw;
+  }
+  .infoCard {
+    gap: 0rem;
+  }
+  .card2 .layer2 .circle-progress-wrap {
+    margin-left: 3.5rem;
+  }
+  .progressInfoContent {
+    display: flex;
+    gap: 0;
+}
+  footer {
+    margin: 1rem 7rem;
+  }
+  td h4,
+  td {
+    font-size: 0.5rem;
+  }
+  .card6 .tableHeadings th {
+    font-size: 0.8rem;
+  }
+  .card1 {
+    width: 95.8vw;
+    padding: 3rem;
+    padding-left: 1rem;
+  }
+  footer {
+    flex-direction: column;
+    margin: 1rem;
+  }
+  .footerRight ul {
+    margin-left: 0rem;
+    flex-direction: row;
+  }
+  .card {
+    width: 84vw;
+}
+.container {
+  width: 99vw;
+}
+.orderCard {
+  flex-wrap: nowrap;
+}
+.infoBox3 {
+  padding: .9rem;
+}
 }
 
+@media (max-width: 375px) {
+  .container {
+    width: 98.5vw;
+  }
+  .nav h3 {
+    margin-left: 0rem;
+    font-size: 1rem;
+  }
+  .progressInfoContent {
+    display: flex;
+  }
+  .card2 .layer2 .circle-progress-wrap {
+    margin-left: 2rem;
+  }
+  .infoItem {
+    margin: 0rem;
+    flex: 1 1 200px;
+  }
+  .orderCard h4 {
+    font-size: 1rem;
+  }
+  footer {
+    flex-direction: column;
+    margin: 1rem;
+  }
+  .footerRight ul {
+    margin-left: 0rem;
+    flex-direction: row;
+  }
+  .card {
+    width: 83vw;
+  }
+  .nameWithIcon i {
+    display: none;
+  }
+  .progressInfoContent {
+    display: flex;
+    gap: 0;
+  }
+  .card1 {
+    width: 82vw;
+  }
+  .orderCard {
+    flex-wrap: nowrap;
+}
+.card h2{
+  font-size: 1rem;
+}
+.card6{
+  background: none;
+  /* width: 99vw; */
+  margin-left: 0rem;
+}
+}
+@media (max-width: 320px) {
+  .container {
+    width: 139.5vw;
+  }
+  .progressInfoContent {
+    gap: 0;
+  }
+  footer {
+    margin: 1rem 2rem;
+  }
+}
 /* @media (max-width: 1629px) {
   .cardFlex2 .card4,
   .cardFlex2 .card5 {
